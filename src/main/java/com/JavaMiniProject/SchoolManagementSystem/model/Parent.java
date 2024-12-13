@@ -24,9 +24,13 @@ public class Parent implements UserDetails {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private String firstName;
+    private String middleName;
     private String lastName;
     private String email;
     private String password;
+
+
+
     @PrePersist
     public void prePersist() {
         if (this.id == null) {

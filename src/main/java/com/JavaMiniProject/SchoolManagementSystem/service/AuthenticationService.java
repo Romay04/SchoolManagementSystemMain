@@ -29,6 +29,8 @@ public class AuthenticationService {
 
         var parent = Parent.builder()
                 .firstName(request.getFirstName())
+                .middleName(request.getMiddleName())
+                .lastName(request.getLastName())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .build();

@@ -11,11 +11,13 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RegisterRequest {
 
-    @NotBlank(message = "Username is required")
+    @NotBlank(message = "firstname is required")
    @Pattern(regexp = "^[a-zA-Z]+$", message = "First name must contain only letters")
     private String firstName;
 
-       @NotBlank(message = "Username is required")
+    private String middleName;
+
+       @NotBlank(message = "lastname is required")
        @Pattern(regexp = "^[a-zA-Z]+$", message = "Last name must contain only letters")
      private String lastName;
 

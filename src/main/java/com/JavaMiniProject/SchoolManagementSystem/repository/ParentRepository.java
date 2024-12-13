@@ -1,7 +1,9 @@
 package com.JavaMiniProject.SchoolManagementSystem.repository;
 
 import com.JavaMiniProject.SchoolManagementSystem.model.Parent;
+//import com.JavaMiniProject.SchoolManagementSystem.projection.PasswordProjections;
 import org.springframework.data.repository.CrudRepository;
+
 
 import java.util.Optional;
 import java.util.UUID;
