@@ -15,8 +15,6 @@ public class RegisterRequest {
    @Pattern(regexp = "^[a-zA-Z]+$", message = "First name must contain only letters")
     private String firstName;
 
-    private String middleName;
-
        @NotBlank(message = "lastname is required")
        @Pattern(regexp = "^[a-zA-Z]+$", message = "Last name must contain only letters")
      private String lastName;
